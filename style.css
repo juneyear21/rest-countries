@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:"Nunito Sans", sans-serif ;
+}
+main{
+    padding: 40px;
+}
+.main-header{
+    box-shadow: 0px 3px 5px 0px #56565629 ;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 50px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.countries-cards{
+    width: 250px;
+    box-shadow: 0px 3px 5px 0px #56565629 ;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.15s ease-in;
+}
+.countries-cards:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 3px 5px 2px #56565629 ;
+}
+.countries-cards .flag{
+    width: 100%;
+}
+.countries-cards .info{
+    display: inline-block;
+    padding-inline: 30px;
+    padding-bottom: 28px;
+}
+.info .name{
+    font-size: 21px;
+    margin-block: 25px;
+}
+.info p{
+    margin-block: 10px;
+}
+.search-filter{
+    margin-block: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px #56565629 ;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+    padding-inline: 25px;
+   
+}
+.search{
+    border: 0;
+    outline: none;
+    width: inherit;
+    padding: 10px;
+    width: 500px;
+}
+input[type="text"]::placeholder{
+    color: rgb(165, 165, 165);
+    font-size: 16px;
+    
+}
+.search-bar i{
+    padding: 10px;
+    color: rgb(139, 139, 139);
+}
+select{
+    width: 150px;
+    box-shadow: 0px 1px 4px 0px #56565629 ;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
