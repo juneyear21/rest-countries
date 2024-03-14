@@ -16,17 +16,15 @@ fetch(`https://restcountries.com/v3.1/name/${countryname}?fullText=true`)
           .join(", ")
       : "No native name available";
 
-    // To Handle capital information
+
     let capitalInfo = country.capital
       ? country.capital[0]
       : "Capital information not available";
 
-    // To Handle language information
     let languageInfo = country.languages
       ? Object.values(country.languages).join(", ")
       : "Language information not available";
 
-    // To Handle currency information
     let currencyName = "";
     let currencySymbol = "";
     if (country.currencies) {
@@ -37,7 +35,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryname}?fullText=true`)
       }
     }
 
-    // To Handle border countries
+
     let borderCountriesLinks = "";
     if (country.borders && country.borders.length > 0) {
       Promise.all(
@@ -59,7 +57,6 @@ fetch(`https://restcountries.com/v3.1/name/${countryname}?fullText=true`)
     }
 
     function renderCountryDetails() {
-      //To Handle Sub region
       let subRegionINfo = country.subregion
         ? country.subregion
         : "No sub-region";
